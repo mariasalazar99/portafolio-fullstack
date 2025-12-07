@@ -1,6 +1,6 @@
 // Efecto de escritura automática estilo tecnológico
 document.addEventListener("DOMContentLoaded", () => {
-  const text = "Desarrolladora Full Stack. ¿En qué te puedo ayudar? :D";
+  const text = "Desarrolladora Full Stack Javascript. ¿En qué te puedo ayudar? :D";
   const textElement = document.querySelector("#hero p");
   textElement.textContent = "";
 
