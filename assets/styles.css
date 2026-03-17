@@ -173,6 +173,11 @@ section.show {
   font-weight: 600;
 }
 
+#linkedin h2 {
+  color: #f48fb1;
+  font-weight: 600;
+}
+
 #contact button {
   background-color: #f48fb1;
   border: none;

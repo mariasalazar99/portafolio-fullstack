@@ -30,7 +30,7 @@ document.querySelectorAll("section").forEach(el => observer.observe(el));
 
 // Botón para subir al inicio
 const scrollBtn = document.createElement("button");
-scrollBtn.innerHTML = "⬆️";
+scrollBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
 scrollBtn.id = "scrollTopBtn";
 document.body.appendChild(scrollBtn);
 

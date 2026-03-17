@@ -2,8 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>María Salazar - Desarrolladora Full Stack Javascript</title>
+  <meta name="description" content="Portafolio de María Teresa Salazar, desarrolladora Full Stack JavaScript.">  <title>María Salazar - Desarrolladora Full Stack Javascript</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -15,11 +14,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-semibold" href="#hero">María Teresa Salazar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand fw-semibold" href="index.html">María Teresa Salazar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
       </button>
-
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
@@ -35,7 +32,7 @@
   <section id="hero" class="py-5 mt-5">
     <div class="container text-center">
       <h1>Hola, soy <span class="highlight">María Teresa Salazar</span></h1>
-      <p>Desarrolladora Full Stack. ¿En qué te puedo ayudar? :D</p>
+      <p class="lead">Desarrolladora Full Stack. ¿En qué te puedo ayudar? :D</p>
       <a href="#projects" class="btn btn-lg btn-pastel mt-4">¡Quiero ver tus proyectos!</a>
     </div>
   </section>
@@ -43,9 +40,9 @@
   <!-- Sobre mí -->
   <section id="about" class="py-5">
     <div class="container">
-<div class="row justify-content-center text-center">        <div class="col-md-6">
-          <img src="./assets/images/foto-de-perfil.jpg" alt="María Teresa Salazar" class="img-fluid rounded-4 shadow">
-        </div>
+<div class="row justify-content-center text-center">
+  <div class="col-md-6">
+<img src="./assets/images/foto-de-perfil.jpg" alt="María Teresa Salazar" class="img-fluid rounded-4 shadow" loading="lazy">        </div>
         <div class="col-md-6 mt-4 mt-md-0">
           <h2>Sobre mí</h2>
           <p>
@@ -53,7 +50,7 @@
           Abajo encontrarás todas mis habilidades, échale un vistazo 👀
           </p>
           <h5>Habilidades:</h5>
-          <div class="skills d-flex flex-wrap gap-2">
+          <div class="skills d-flex flex-wrap gap-2 justify-content-center">
             <span class="badge bg-light text-dark"><i class="bi bi-code-slash"></i> HTML</span>
             <span class="badge bg-light text-dark"><i class="bi bi-braces"></i> CSS</span>
             <span class="badge bg-light text-dark"><i class="bi bi-lightning"></i> JS</span>
@@ -92,7 +89,7 @@
             <div class="card-body">
               <h5 class="card-title">Inventario de Libros</h5>
               <p class="card-text">App diseñada para inventario de libros y compra de artículos en stock.</p>
-              <a href="https://github.com/mariasalazar99/inventario-libros" class="btn btn-outline-secondary btn-sm">Código</a>
+              <a href="https://github.com/mariasalazar99/inventario-libros" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Código</a>
             </div>
           </div>
         </div>
@@ -104,7 +101,7 @@
             <div class="card-body">
               <h5 class="card-title">Pinky To-Do List</h5>
               <p class="card-text">Organizador de tareas "versión pinky" para ver lista de pendientes.</p>
-              <a href="https://github.com/mariasalazar99/lista-de-tareas" class="btn btn-outline-secondary btn-sm">Código</a>
+              <a href="https://github.com/mariasalazar99/lista-de-tareas" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Código</a>
             </div>
           </div>
         </div>
@@ -116,7 +113,7 @@
             <div class="card-body">
               <h5 class="card-title">Página La Vie - Fotografía</h5>
               <p class="card-text">[En construcción] Página tipo portafolio de fotografía y contacto.</p>
-              <a href="https://github.com/mariasalazar99/pagina-lavie" class="btn btn-outline-secondary btn-sm">Código</a>
+              <a href="https://github.com/mariasalazar99/pagina-lavie" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Código</a>
             </div>
           </div>
         </div>
@@ -127,7 +124,7 @@
             <div class="card-body">
               <h5 class="card-title">the Focus App</h5>
               <p class="card-text">[En construcción] App de concentración y organización de tareas.</p>
-              <a href="https://github.com/mariasalazar99/theFocusApp" class="btn btn-outline-secondary btn-sm">Código</a>
+              <a href="https://github.com/mariasalazar99/theFocusApp" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Código</a>
             </div>
           </div>
         </div>
@@ -146,11 +143,21 @@
   <!-- Github -->
   <section id="github" class="py-5">
         <div class="container text-center">
-      <h2>GitHub</h2>
-      <p>Puedes visitar mi GitHub para ver todos los códigos de mis proyectos a detalle.</p>
+      <h2><i class="bi bi-github"></i> GitHub</h2>
+      <p>Puedes visitar este repositorio para ver todos los códigos de mis proyectos:</p>
       <a href="https://github.com/mariasalazar99" class="btn btn-pastel">Enlace 💖</a>
     </div>
   </section>
+
+  <!--Linkedin-->
+  <section id="linkedin" class="py-5">
+        <div class="container text-center">
+      <h2><i class="bi bi-linkedin"></i> LinkedIn</h2>
+      <p>¡Conectemos! Este es mi perfil de LinkedIn:</p>
+      <a href="https://www.linkedin.com/in/mar%C3%ADa-teresa-salazar-89a7b4344/" class="btn btn-pastel">Enlace 💖</a>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="py-4 text-center bg-light mt-5">
@@ -158,7 +165,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
-  <script src="./assets/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>  <script src="./assets/scripts.js"></script>
 </body>
 </html>
