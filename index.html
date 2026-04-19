@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Portafolio de María Teresa Salazar, desarrolladora Full Stack JavaScript.">  <title>María Salazar - Desarrolladora Full Stack Javascript</title>
+  <meta name="description" content="Portafolio de María Teresa Salazar, desarrolladora Full Stack JavaScript.">  <title>Portafolio - María Teresa Salazar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -11,10 +11,17 @@
 </head>
 
 <body>
+  <div id="loader">
+  <div class="loader-inner">
+    <p class="loader-small">PORTFOLIO</p>
+    <h1>✦ Cargando ✦</h1>
+    <div class="loader-line"><span></span></div>
+  </div>
+</div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-semibold" href="index.html">María Teresa Salazar</a>
+      <a class="navbar-brand fw-semibold" href="index.html">☆</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -28,13 +35,16 @@
   </nav>
 
   <!-- Hero -->
-  <section id="hero" class="py-5 mt-5">
-    <div class="container text-center">
-      <h1>Hola, soy <span class="highlight">María Teresa Salazar</span></h1>
-      <p class="lead">Desarrolladora Full Stack. ¿En qué te puedo ayudar? :D</p>
-      <a href="#projects" class="btn btn-lg btn-pastel mt-4">¡Quiero ver tus proyectos!</a>
+<section id="hero" class="py-5 mt-5">
+  <div class="container hero-wrap text-center">
+    <p class="hero-label">FULL STACK DEVELOPER</p>
+    <div id="nombre">
+    <h1><span>María Teresa Salazar</span></h1>
     </div>
-  </section>
+    <p class="lead hero-sub">Construyendo experiencias web limpias, modernas y funcionales.</p>
+    <a href="#projects" class="btn btn-pastel mt-4">Ver proyectos</a>
+  </div>
+</section>
 
   <!-- Sobre mí -->
   <section id="about" class="py-5">
@@ -174,7 +184,7 @@
 
   <!-- Footer -->
   <footer class="py-4 text-center bg-light mt-5">
-    <p class="m-0">© 2025 María Teresa Salazar — <em>Programar is my passion</em>.</p>
+    <p class="m-0">© 2025 María Teresa Salazar — <em>Powered by tea, code & moonlight🌙</em></p>
   </footer>
 
   <!-- Scripts -->

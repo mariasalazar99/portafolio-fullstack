@@ -1,6 +1,6 @@
 // Efecto de escritura automática estilo tecnológico
 document.addEventListener("DOMContentLoaded", () => {
-  const text = "Desarrolladora Full Stack Javascript. ¿En qué te puedo ayudar? :D";
+  const text = "Desarrolladora Full Stack Javascript.";
   const textElement = document.querySelector("#hero p");
   textElement.textContent = "";
 
@@ -18,6 +18,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   typeEffect();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "María Teresa Salazar";
+  const textElement = document.querySelector("#nombre h1 span");
+  textElement.textContent = "";
+
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      textElement.textContent = text.substring(0, index + 1);
+      index++;
+      setTimeout(typeEffect, 60);
+    } else {
+      textElement.classList.add("typed-done");
+    }
+  }
+
+  typeEffect();
+});
+
+
+
+
+
 
 // Scroll reveal suave
 const observer = new IntersectionObserver((entries) => {
@@ -55,4 +80,16 @@ window.addEventListener("scroll", () => {
 
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// Loader al cargar la página
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hide-loader');
+  }, 1400);
+});
+
+// Cuando termina de cargar la página
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
 });
