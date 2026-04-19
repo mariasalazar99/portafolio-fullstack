@@ -173,6 +173,51 @@ color:var(--muted);
   animation: loading 1.5s linear infinite;
 }
 
+/* Reveal */
+.reveal{
+opacity:0;
+transform:translateY(70px);
+transition:opacity .9s ease, transform .9s ease;
+will-change:transform, opacity;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Variaciones opcionales */
+.reveal-left{
+opacity:0;
+transform:translateX(-70px);
+transition:all .9s ease;
+}
+.reveal-left.active{
+opacity:1;
+transform:none;
+}
+
+.reveal-right{
+opacity:0;
+transform:translateX(70px);
+transition:all .9s ease;
+}
+.reveal-right.active{
+opacity:1;
+transform:none;
+}
+
+/* Cards stagger */
+.project-card{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+.project-card.show{
+opacity:1;
+transform:none;
+}
+
 @media(max-width:992px){
 #hero{min-height:80vh}
 #hero h1{font-size:3.4rem}

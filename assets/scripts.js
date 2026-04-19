@@ -93,3 +93,30 @@ window.addEventListener('load', () => {
 window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none";
 });
+
+// Reveal //
+const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const cards = document.querySelectorAll('.project-card');
+
+function animateOnScroll(){
+  const trigger = window.innerHeight * 0.88;
+
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < trigger){
+      el.classList.add('active');
+    }
+  });
+
+  cards.forEach((card,index)=>{
+    const top = card.getBoundingClientRect().top;
+    if(top < trigger){
+      setTimeout(()=>{
+        card.classList.add('show');
+      }, index * 140);
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
